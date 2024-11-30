@@ -20,7 +20,12 @@
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
-
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   </head>
   <body>
@@ -42,24 +47,45 @@
                   Home
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="#about">
                   About
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="#schedules">
                   schedules
                 </a>
+              </li>            
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link" href="#keynote">  Committees   </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="speakersDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Speakers
+                <a class="nav-link" href="#national">  national   </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#international">  international   </a>
+              </li>
+              
+               -->
+               <li class="nav-item dropdown committees-dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="committeesDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Committees
                 </a>
-                <div class="dropdown-menu" aria-labelledby="speakersDropdown">
-                  <a class="dropdown-item" href="#keynote">Keynote</a>
-                  <a class="dropdown-item" href="#national">Committee</a>
-                </div>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#keynote" >Key Note Speakers</a></li>
+                  <li><a class="dropdown-item" href="#international" >International</a></li>
+                  <li><a class="dropdown-item" href="#advisory" >Advisory</a></li>
+                  <li><a class="dropdown-item" href="#organising  " >Organising</a></li>
+                </ul>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link" href="#gallery">
@@ -81,14 +107,17 @@
                   Contact
                 </a>
               </li>
+              <li><br></li>
+              <li><br></li>
             </ul>
           </div>
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logo1.png" alt=""  style="width: 180px; height: 150%;"></a> 
         </div>
       </nav>
       <!-- Navbar End -->
 
       <!-- Hero Area Start -->
-      <div id="hero-area" class="hero-area-bg">
+      <!-- <div id="hero-area" class="hero-area-bg">
         <div class="overlay"></div>
         <div class="container">
           <div class="row justify-content-center">
@@ -97,23 +126,199 @@
                 <div class="icon">
                   <i class="lni-mic"></i>
                 </div>
-                <p class="banner-info">March 7 & 8, 2025 -Bannari Amman Institute of Technology</p>
                 <h2 class="head-title">ICSMT 2025</h2>
                 <p class="banner-desc">
                   4th International Conference on Sustainable Materials and Technologies Bridging Research and Innovation</p>
-                <div class="banner-btn">
+                  <p class="banner-info">Organized by Dept. of Mechanical Engineering <br>
+                  Bannari Amman Institute of Technology, Sathyamangalam
+                  </p>
+                  <div class="banner-btn">
                   <a href="#pricing" class="btn btn-common">Register</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Hero Area End -->
-
+      <div id="hero-area" class="hero-area-bg">
+        <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#heroCarousel" data-slide-to="1"></li>
+            <li data-target="#heroCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Carousel Items -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="overlay"></div>
+              <img src="assets/img/hero-image-1.jpg" class="d-block w-100" alt="Slide 1">
+              <div class="carousel-caption d-flex align-items-center justify-content-center">
+                <div class="contents text-center">
+                  <div class="icon">
+                    <i class="lni-mic"></i>
+                  </div>
+                  <h2 class="head-title">ICSMT 2025</h2>
+                  <p class="banner-desc">
+                    4th International Conference on Sustainable Materials and Technologies Bridging Research and Innovation
+                  </p>
+                  <p class="banner-info">
+                    Organized by Dept. of Mechanical Engineering <br>
+                    Bannari Amman Institute of Technology, Sathyamangalam
+                  </p>
+                  <div class="banner-btn">
+                    <a href="#pricing" class="btn btn-common">Register</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="assets/img/hero-image-2.jpg" class="d-block w-100" alt="Slide 2">
+              <div class="carousel-caption d-flex align-items-center justify-content-center">
+                <div class="contents text-center">
+                  <h2 class="head-title">Explore Innovations</h2>
+                  <p class="banner-desc">Join hands to create sustainable solutions for a better tomorrow.</p>
+                  <div class="banner-btn">
+                    <a href="#about" class="btn btn-common">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="overlay"></div>
+              <img src="assets/img/hero-image-3.jpg" class="d-block w-100" alt="Slide 3">
+              <div class="carousel-caption d-flex align-items-center justify-content-center">
+                <div class="contents text-center">
+                  <h2 class="head-title">Networking Opportunities</h2>
+                  <p class="banner-desc">Connect with leading researchers and industry experts.</p>
+                  <div class="banner-btn">
+                    <a href="#contact" class="btn btn-common">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Controls -->
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
     </header>
+    
     <!-- Header Area wrapper End -->
+    <style>
 
+.hero-area-bg {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-area-bg .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.head-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f8c32d;
+}
+
+.banner-desc,
+.banner-info {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.banner-btn .btn-common {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #f8c32d;
+  border: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.banner-btn .btn-common:hover {
+  background-color: #ffda3a;
+  color: black;
+}
+
+
+      /* Committees-specific dropdown styling */
+      .nav-item.committees-dropdown .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        background-color: #fffafa;
+        border: 2px solid #ff6b8f;
+        padding: 0;
+        border: none;
+      }
+      
+      .nav-item.committees-dropdown .dropdown-item {
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      .nav-item.committees-dropdown .dropdown-item:hover {
+        /* background-color: #f8c32d; */
+        color: #000;
+      }
+      
+      .nav-item.committees-dropdown:hover .dropdown-menu {
+        display: block;
+      }
+      
+      .nav-item.committees-dropdown .dropdown-item.active {
+        background-color: #f8c32d;
+        color: #000;
+      }
+      
+      .nav-item.committees-dropdown .dropdown-toggle.active {
+        color: #f8c32d;
+      }
+      </style>
     <!-- Count Bar Start -->
       <section id="count">
         <div class="container">
@@ -161,35 +366,7 @@
       </div>
     </section>
     <!-- About Section End -->
-<!-- About Section Start -->
-<section id="Dates" class="section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-12 col-xs-12">
-        <div class="img-thumb">
-          <img class="img-fluid rounded-lg" src="assets/img/about/imp.jpg" alt="">
 
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12 col-xs-12">
-        <div class="about-content">
-          <div>
-            <div class="about-text">  
-              <h2>Important Dates</h2>
-            </div>
-            <ul class="stylish-list mb-3">
-              <li><i class="lni-check-mark-circle"></i>Submission of Full Paper  :  5/2/2025</li>
-              <li><i class="lni-check-mark-circle"></i>Intimation of Acceptance  : 27/2/2025</li>
-              <li><i class="lni-check-mark-circle"></i>Registration and Camera Ready Paper Submission  : 2/3/2025</li>
-            </ul>
-            <!-- <a class="btn btn-common" href="#">Learn More</a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- About Section End -->
 
     <!-- Video Section Start -->
     <div class="ready-to-play">
@@ -215,7 +392,7 @@
               <li>
                 <i class="lni-map-marker"></i>
               </li>
-              <li><span><b>Location</b> Bannari Amman Institute of Technology</span></li>
+              <li><span><b>Location</b> BIT Sathy</span></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
@@ -872,309 +1049,122 @@
 
 
 
+<div classname="committee" >
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- key note speakers -->
-    <section id="keynote" class="section-padding text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Our Key Note Speakers</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-bt">
-          <div class="col-lg-3 col-md-6 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-01.png" alt="">
-                <!-- <div class="team-overlay">
-                </div> -->
-              </div>
-              <div class="info-text">
-                <h3><a href="#">Dr.Iftikhar Hussain</a></h3>
-                <p>City University of Hong Kong</p>
+      <!-- key note speakers -->
+      <section id="keynote" class="section-padding text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title-header text-center">
+                <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Our Key Note Speakers</h2>
+                <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
               </div>
             </div>
-            <!-- Team Item Ends -->
           </div>
-          <div class="col-lg-3 col-md-6 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-02.jpg" alt="">
-                <!-- <div class="team-overlay">
-                </div> -->
+          <div class="row justify-content-bt">
+            <div class="col-lg-3 col-md-6 col-xs-12">
+              <!-- Team Item Starts -->
+              <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-img">
+                  <img class="img-fluid" src="assets/img/team/team-01.png" alt="">
+                  <!-- <div class="team-overlay">
+                  </div> -->
+                </div>
+                <div class="info-text">
+                  <h3><a href="#">Dr.Iftikhar Hussain</a></h3>
+                  <p>City University of Hong Kong</p>
+                </div>
               </div>
-              <div class="info-text">
-                <h3><a href="#">Dr.Muhammad A Hassan</a></h3>
-                <p>Cairo University, Egypt</p>
-              </div>
+              <!-- Team Item Ends -->
             </div>
-            <!-- Team Item Ends -->
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-03.jpg" alt="">
-                <!-- <div class="team-overlay">
-                </div> -->
+            <div class="col-lg-3 col-md-6 col-xs-12">
+              <!-- Team Item Starts -->
+              <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-img">
+                  <img class="img-fluid" src="assets/img/team/team-02.jpg" alt="">
+                  <!-- <div class="team-overlay">
+                  </div> -->
+                </div>
+                <div class="info-text">
+                  <h3><a href="#">Dr.Muhammad A Hassan</a></h3>
+                  <p>Cairo University, Egypt</p>
+                </div>
               </div>
-              <div class="info-text">
-                <h3><a href="#">Dr P V Nidheesh</a></h3>
-                <p>Senior Scientist,CSIR- NEERI, Nagpur</p>
-              </div>
+              <!-- Team Item Ends -->
             </div>
-            <!-- Team Item Ends -->
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="0.8s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-04.jpg" alt="">
-                <!-- <div class="team-overlay">
-                </div> -->
+  
+            <div class="col-lg-3 col-md-6 col-xs-12">
+              <!-- Team Item Starts -->
+              <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-img">
+                  <img class="img-fluid" src="assets/img/team/team-03.jpg" alt="">
+                  <!-- <div class="team-overlay">
+                  </div> -->
+                </div>
+                <div class="info-text">
+                  <h3><a href="#">Dr P V Nidheesh</a></h3>
+                  <p>Senior Scientist,CSIR- NEERI, Nagpur</p>
+                </div>
               </div>
-              <div class="info-text">
-                <h3><a href="#">Dr Sujoy Chakravarty</a></h3>
-                <p>Scientist-F in UGC-DAE,IGCAR, Kalpakkam</p>
-              </div>
+              <!-- Team Item Ends -->
             </div>
-            <!-- Team Item Ends -->
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-05.jpg" alt="">
-                <!-- <div class="team-overlay">
-                </div> -->
+  
+            <div class="col-lg-3 col-md-6 col-xs-12">
+              <!-- Team Item Starts -->
+              <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-img">
+                  <img class="img-fluid" src="assets/img/team/team-04.jpg" alt="">
+                  <!-- <div class="team-overlay">
+                  </div> -->
+                </div>
+                <div class="info-text">
+                  <h3><a href="#">Dr Sujoy Chakravarty</a></h3>
+                  <p>Scientist-F in UGC-DAE,IGCAR, Kalpakkam</p>
+                </div>
               </div>
-              <div class="info-text">
-                <h3><a href="#"> Dr M Sathish </a></h3>
-                <p>CSIR CECRI,Karaikudi </p>
-              </div>
+              <!-- Team Item Ends -->
             </div>
-            <!-- Team Item Ends -->
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
-              <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-06.jpg" alt="">
-                <!-- <div class="team-overlay">
-                </div> -->
+  
+            <div class="col-lg-3 col-md-6 col-xs-12">
+              <!-- Team Item Starts -->
+              <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-img">
+                  <img class="img-fluid" src="assets/img/team/team-05.jpg" alt="">
+                  <!-- <div class="team-overlay">
+                  </div> -->
+                </div>
+                <div class="info-text">
+                  <h3><a href="#"> Dr M Sathish </a></h3>
+                  <p>CSIR CECRI,Karaikudi </p>
+                </div>
               </div>
-              <div class="info-text">
-                <h3><a href="#">Dr S Sakthivel </a></h3>
-                <p>Scientist F& Team Leader, DST - ARCI</p>
-              </div>
+              <!-- Team Item Ends -->
             </div>
-            <!-- Team Item Ends -->
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-xs-12">
-          </div>
-        
-    </section>
-    <!-- Key note speakers -->
-
-
-
- <!-- key note speakers -->
- <section id="national" class="section-padding text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="section-title-header text-center">
-          <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">National Technical Committee</h2>
-          <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-bt">
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
-          <div class="team-img">
-            <img class="img-fluid" src="assets/img/national/team-01.png" alt="">
-            <!-- <div class="team-overlay">
-            </div> -->
-          </div>
-          <div class="info-text">
-            <h3><a href="#">Dr K Ravikumar</a></h3>
-            <p>Associate Professor, Mechanical Engineering, IIT Delhi</p>
-          </div>
-        </div>
-        <!-- Team Item Ends -->
-      </div>
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
-          <div class="team-img">
-            <img class="img-fluid" src="assets/img/national/team-02.png" alt="">
-            <!-- <div class="team-overlay">
-            </div> -->
-          </div>
-          <div class="info-text">
-            <h3><a href="#">Dr V Pandu Ranga </a></h3>
-            <p>Professor, Department of Mechanical Engineering, IIT Bhuvaneshwar</p>
-          </div>
-        </div>
-        <!-- Team Item Ends -->
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
-          <div class="team-img">
-            <img class="img-fluid" src="assets/img/national/team-03.png" alt="">
-            <!-- <div class="team-overlay">
-            </div> -->
-          </div>
-          <div class="info-text">
-            <h3><a href="#">Dr Santhakumar Mohan</a></h3>
-            <p>Department of Mechanical Engineering, IIT Palakad, Kerala</p>
-          </div>
-        </div>
-        <!-- Team Item Ends -->
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="0.8s">
-          <div class="team-img">
-            <img class="img-fluid" src="assets/img/national/team-04.png" alt="">
-            <!-- <div class="team-overlay">
-            </div> -->
-          </div>
-          <div class="info-text">
-            <h3><a href="#">Dr N Sivashanmugam</a></h3>
-            <p>Professor, Department of Mechanical Engineering, NIT Tiruchirappalli</p>
-          </div>
-        </div>
-        <!-- Team Item Ends -->
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1s">
-          <div class="team-img">
-            <img class="img-fluid" src="assets/img/national/team-05.jpg" alt="">
-            <!-- <div class="team-overlay">
-            </div> -->
-          </div>
-          <div class="info-text">
-            <h3><a href="#">Daryl Dixon</a></h3>
-            <p>Full-stack Developer, Google</p>
-          </div>
-        </div>
-        <!-- Team Item Ends -->
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
-          <div class="team-img">
-            <img class="img-fluid" src="assets/img/national/team-06.png" alt="">
-            <!-- <div class="team-overlay">
-            </div> -->
-          </div>
-          <div class="info-text">
-            <h3><a href="#">Chris Adams</a></h3>
-            <p>UI Designer, Apple</p>
-          </div>
-        </div>
-        <!-- Team Item Ends -->
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
-          <div class="team-img">
-            <img class="img-fluid" src="assets/img/national/team-07.jfif" alt="">
-            <!-- <div class="team-overlay">
-            </div> -->
-          </div>
-          <div class="info-text">
-            <h3><a href="#">Chris Adams</a></h3>
-            <p>UI Designer, Apple</p>
-          </div>
-        </div>
-        <!-- Team Item Ends -->
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
-          <div class="team-img">
-            <img class="img-fluid" src="assets/img/national/team-08.jpg" alt="">
-            <!-- <div class="team-overlay">
-            </div> -->
-          </div>
-          <div class="info-text">
-            <h3><a href="#">Chris Adams</a></h3>
-            <p>UI Designer, Apple</p>
-          </div>
-        </div>
-        <!-- Team Item Ends -->
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-xs-12">
-        <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
-          <div class="team-img">
-            <img class="img-fluid" src="assets/img/national/team-09.jpg" alt="">
-            <!-- <div class="team-overlay">
-            </div> -->
-          </div>
-          <div class="info-text">
-            <h3><a href="#">Chris Adams</a></h3>
-            <p>UI Designer, Apple</p>
-          </div>
-        </div>
-        <!-- Team Item Ends -->
-      </div>
-
-      <div class="col-lg-3 col-md-6 col-xs-12">
-      </div>
-    
-</section>
-<!-- Key note speakers -->
-
-
-
-
+  
+            <div class="col-lg-3 col-md-6 col-xs-12">
+              <!-- Team Item Starts -->
+              <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-img">
+                  <img class="img-fluid" src="assets/img/team/team-06.jpg" alt="">
+                  <!-- <div class="team-overlay">
+                  </div> -->
+                </div>
+                <div class="info-text">
+                  <h3><a href="#">Dr S Sakthivel </a></h3>
+                  <p>Scientist F& Team Leader, DST - ARCI</p>
+                </div>
+              </div>
+              <!-- Team Item Ends -->
+            </div>
+  
+            <div class="col-lg-3 col-md-6 col-xs-12">
+            </div>
+          
+      </section>
+      <!-- Key note speakers -->
 
 
 
@@ -1207,7 +1197,7 @@
       </div>
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/international/team-02.jpg" alt="">
             <!-- <div class="team-overlay">
@@ -1223,7 +1213,7 @@
 
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/international/team-03.jpg" alt="">
             <!-- <div class="team-overlay">
@@ -1239,7 +1229,7 @@
 
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="0.8s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/international/team-04.jpeg" alt="">
             <!-- <div class="team-overlay">
@@ -1255,7 +1245,7 @@
 
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/national/team-05.jpg" alt="">
             <!-- <div class="team-overlay">
@@ -1271,7 +1261,7 @@
 
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/international/team-06.jpg" alt="">
             <!-- <div class="team-overlay">
@@ -1287,7 +1277,7 @@
 
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/international/team-07.png" alt="">
             <!-- <div class="team-overlay">
@@ -1303,7 +1293,7 @@
 
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/international/team-08.jpg" alt="">
             <!-- <div class="team-overlay">
@@ -1319,7 +1309,7 @@
 
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/international/team-09.jpg" alt="">
             <!-- <div class="team-overlay">
@@ -1336,7 +1326,7 @@
       
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/international/team-10.jpeg" alt="">
             <!-- <div class="team-overlay">
@@ -1353,7 +1343,7 @@
       
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/international/team-11.jpg" alt="">
             <!-- <div class="team-overlay">
@@ -1370,7 +1360,7 @@
       
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/international/team-12.jpg" alt="">
             <!-- <div class="team-overlay">
@@ -1387,7 +1377,7 @@
       
       <div class="col-lg-3 col-md-6 col-xs-12">
         <!-- Team Item Starts -->
-        <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+        <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
           <div class="team-img">
             <img class="img-fluid" src="assets/img/international/team-13.png" alt="">
             <!-- <div class="team-overlay">
@@ -1410,62 +1400,291 @@
 
 
 
+<!-- key note speakers -->
+<section id="national" class="section-padding text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title-header text-center">
+          <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">National Technical Committee</h2>
+          <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-bt">
+      <div class="col-lg-3 col-md-6 col-xs-12">
+        <!-- Team Item Starts -->
+        <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+          <div class="team-img">
+            <img class="img-fluid" src="assets/img/national/team-01.png" alt="">
+            <!-- <div class="team-overlay">
+            </div> -->
+          </div>
+          <div class="info-text">
+            <h3><a href="#">Dr K Ravikumar</a></h3>
+            <p>Associate Professor, Mechanical Engineering, IIT Delhi</p>
+          </div>
+        </div>
+        <!-- Team Item Ends -->
+      </div>
+      <div class="col-lg-3 col-md-6 col-xs-12">
+        <!-- Team Item Starts -->
+        <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+          <div class="team-img">
+            <img class="img-fluid" src="assets/img/national/team-02.png" alt="">
+            <!-- <div class="team-overlay">
+            </div> -->
+          </div>
+          <div class="info-text">
+            <h3><a href="#">Dr V Pandu Ranga </a></h3>
+            <p>Professor, Department of Mechanical Engineering, IIT Bhuvaneshwar</p>
+          </div>
+        </div>
+        <!-- Team Item Ends -->
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-xs-12">
+        <!-- Team Item Starts -->
+        <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+          <div class="team-img">
+            <img class="img-fluid" src="assets/img/national/team-03.png" alt="">
+            <!-- <div class="team-overlay">
+            </div> -->
+          </div>
+          <div class="info-text">
+            <h3><a href="#">Dr Santhakumar Mohan</a></h3>
+            <p>Department of Mechanical Engineering, IIT Palakad, Kerala</p>
+          </div>
+        </div>
+        <!-- Team Item Ends -->
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-xs-12">
+        <!-- Team Item Starts -->
+        <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-img">
+            <img class="img-fluid" src="assets/img/national/team-04.png" alt="">
+            <!-- <div class="team-overlay">
+            </div> -->
+          </div>
+          <div class="info-text">
+            <h3><a href="#">Dr N Sivashanmugam</a></h3>
+            <p>Professor, Department of Mechanical Engineering, NIT Tiruchirappalli</p>
+          </div>
+        </div>
+        <!-- Team Item Ends -->
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-xs-12">
+        <!-- Team Item Starts -->
+        <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-img">
+            <img class="img-fluid" src="assets/img/national/team-05.jpg" alt="">
+            <!-- <div class="team-overlay">
+            </div> -->
+          </div>
+          <div class="info-text">
+            <h3><a href="#">Daryl Dixon</a></h3>
+            <p>Full-stack Developer, Google</p>
+          </div>
+        </div>
+        <!-- Team Item Ends -->
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-xs-12">
+        <!-- Team Item Starts -->
+        <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-img">
+            <img class="img-fluid" src="assets/img/national/team-06.png" alt="">
+            <!-- <div class="team-overlay">
+            </div> -->
+          </div>
+          <div class="info-text">
+            <h3><a href="#">Chris Adams</a></h3>
+            <p>UI Designer, Apple</p>
+          </div>
+        </div>
+        <!-- Team Item Ends -->
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-xs-12">
+        <!-- Team Item Starts -->
+        <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-img">
+            <img class="img-fluid" src="assets/img/national/team-07.jfif" alt="">
+            <!-- <div class="team-overlay">
+            </div> -->
+          </div>
+          <div class="info-text">
+            <h3><a href="#">Chris Adams</a></h3>
+            <p>UI Designer, Apple</p>
+          </div>
+        </div>
+        <!-- Team Item Ends -->
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-xs-12">
+        <!-- Team Item Starts -->
+        <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-img">
+            <img class="img-fluid" src="assets/img/national/team-08.jpg" alt="">
+            <!-- <div class="team-overlay">
+            </div> -->
+          </div>
+          <div class="info-text">
+            <h3><a href="#">Chris Adams</a></h3>
+            <p>UI Designer, Apple</p>
+          </div>
+        </div>
+        <!-- Team Item Ends -->
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-xs-12">
+        <!-- Team Item Starts -->
+        <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
+          <div class="team-img">
+            <img class="img-fluid" src="assets/img/national/team-09.jpg" alt="">
+            <!-- <div class="team-overlay">
+            </div> -->
+          </div>
+          <div class="info-text">
+            <h3><a href="#">Chris Adams</a></h3>
+            <p>UI Designer, Apple</p>
+          </div>
+        </div>
+        <!-- Team Item Ends -->
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-xs-12">
+      </div>
+    
+</section>
+<!-- Key note speakers -->
 
 
 
+<!-- key note speakers -->
+    <section id="advisory" class="section-padding text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Advisory Committee</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-bt">
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-01.png" alt="">
+                <!-- <div class="team-overlay">
+                </div> -->
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Dr. C. Palanisamy</a></h3>
+                <p>Principal</p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-02.jpg" alt="">
+                <!-- <div class="team-overlay">
+                </div> -->
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Dr. K. Sivakumar</a></h3>
+                <p>Dean - PDS</p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-03.jpg" alt="">
+                <!-- <div class="team-overlay">
+                </div> -->
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Dr. K. L. Senthilkumar</a></h3>
+                <p> Head Academics</p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12">
+          </div>
+        
+    </section>
+    <!-- Key note speakers -->
 
 
 
+    <!-- key note speakers -->
+    <section id="organising" class="section-padding text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Organising Committee</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-bt">
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-01.png" alt="">
+                <!-- <div class="team-overlay">
+                </div> -->
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Dr. G. Kumaresan</a></h3>
+                <p>Professor & Head</p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-02.jpg" alt="">
+                <!-- <div class="team-overlay">
+                </div> -->
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Prof. Adarsh Kumar Pandey</a></h3>
+                <p>Deputy Dean <br>
+                  Research Centre for Nano-Materials and Energy Technology </p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
+
+       
+          <div class="col-lg-3 col-md-6 col-xs-12">
+          </div>
+        
+    </section>
+    <!-- Key note speakers -->
 
 
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
 
     <!-- Event Slides Section Start -->
     <section id="event-up" class="section-padding">
@@ -1532,7 +1751,35 @@
       </div>
     </section>
     <!-- Event Slides Section End -->
+    <!-- About Section Start -->
+<section id="pricing" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-xs-12">
+        <div class="img-thumb">
+          <img class="img-fluid rounded-lg" src="assets/img/about/imp.jpg" alt="">
 
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-xs-12">
+        <div class="about-content">
+          <div>
+            <div class="about-text">  
+              <h2>Important Dates</h2>
+            </div>
+            <ul class="stylish-list mb-3">
+              <li><i class="lni-check-mark-circle"></i>Submission of Full Paper  :  5/2/2025</li>
+              <li><i class="lni-check-mark-circle"></i>Intimation of Acceptance  : 27/2/2025</li>
+              <li><i class="lni-check-mark-circle"></i>Registration and Camera Ready Paper Submission  : 2/3/2025</li>
+            </ul>
+            <!-- <a class="btn btn-common" href="#">Learn More</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Section End -->
     <!-- Ticket Pricing Area Start -->
     <section id="pricing" class="section-padding">
       <div class="container">
@@ -1854,6 +2101,7 @@
             </div> -->
             <div class="footer-logo">
               <img src="assets/img/logo.png" alt="">
+              <img src="assets/img/logo1.png" alt=""  style="width: 280px; height: auto;">
             </div>
             <div class="social-icons-footer">
               <ul>
